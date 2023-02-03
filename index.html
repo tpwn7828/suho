@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>수호네컷</title>
+    <style>
+      /* 이서윤체 폰트 적용을 위한 코드 */
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      /* body태그 자체에 css 요소 부여 */
+      body {
+        font-family: "LeeSeoyun";
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background-image: url("./background.png");
+      }
+
+      /*  */
+      .container {
+        width: 390px;
+        background-color: #545ef4cc;
+        height: 100%;
+      }
+
+      .photos {
+        margin-top: 30px;
+      }
+
+      .photo-frame {
+	background-color: white;
+	margin: 15px 20px;
+	height: 197px;
+	background-size: cover;
+	position: relative;
+	cursor: pointer; //마우스가 사진 위로 올라가면 포인터 아이콘으로 바뀌도록
+}
+
+      /* 하단 영역 스타일링 */
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .f-title {
+        font-size: 25px;
+        font-weight: 900;
+        color: white;
+      }
+      .f-date {
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+      }
+
+
+      .photo-description {
+        color: white;
+        background-color: black;
+        width: fit-content;
+        padding: 0 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        transform: translate(-50%);
+        left: 50%;
+        
+      }
+
+      video { width: 100%; display: block; margin: 20px auto; }
+    
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="photos">
+        <div class="photo-frame">
+          <video muted autoplay loop>
+              <source src="s4.mp4" type="video/mp4">
+              <strong>Your browser does not support the video tag.</strong>
+            </video>
+      </div>
+        <div class="photo-frame">
+          <video muted autoplay loop>
+              <source src="s3.mp4" type="video/mp4">
+              <strong>Your browser does not support the video tag.</strong>
+            </video>
+      </div>
+        <div class="photo-frame">
+          <video muted autoplay loop>
+              <source src="s2.mp4" type="video/mp4">
+              <strong>Your browser does not support the video tag.</strong>
+            </video>
+      </div>
+        <div class="photo-frame">
+            <video muted autoplay loop>
+                <source src="s1.mp4" type="video/mp4">
+                <strong>Your browser does not support the video tag.</strong>
+              </video>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="f-title">Happy 수호's Day</p>
+        <p class="f-date">2023.02.09</p>
+      </div>
+    </div>
+  </body>
+</html>
